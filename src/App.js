@@ -1,12 +1,18 @@
-//Import Component
-import style from "./styles/App.module.css";
+import React from "react";
+// style
+import styles from "./styles/App.module.css";
+
+// components
+import Player from "./components/Player";
+import Song from "./components/Song";
 
 function App() {
-  return (
-    <div className="App">
-        <h1 className={style.title}>Music Player</h1>
-    </div>
-  );
+    return (
+        <div className={styles.App}>
+            <Song/>
+            <Player/>
+        </div>
+    );
 }
 
 export default App;
