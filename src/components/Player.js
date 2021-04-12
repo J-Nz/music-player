@@ -1,6 +1,6 @@
 import React from "react";
 // style
-import styles from "../styles/Player.module.css";
+import styles from "../styles/Player.module.scss";
 // fontawesome
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {

@@ -1,6 +1,6 @@
 import React from "react";
 // style
-import styles from "./styles/App.module.css";
+import styles from "./styles/App.module.scss";
 
 // components
 import Player from "./components/Player";

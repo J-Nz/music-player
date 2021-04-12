@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Song.module.css";
+import styles from "../styles/Song.module.scss";
 
 const Song = () => {
     return (
