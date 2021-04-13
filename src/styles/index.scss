@@ -1,35 +1,29 @@
-/**/
+//
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    font-size: 62.5%;
+  //font-size: 62.5%;
 }
 
-/**/
+//
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 button {
-    border: none;
-    font-family: inherit;
+  border: none;
+  font-family: inherit;
 }
 
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 ul {
-    list-style-type: none;
-}
-
-/**/
-body {
-    color: #c6c6c6;
-    background: #343434;
+  list-style-type: none;
 }
