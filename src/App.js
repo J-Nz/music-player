@@ -15,11 +15,13 @@ function App() {
     const audioRef = useRef(null);
     // State
     const [songs, setSongs] = useState(data());
-    const [currentSong, setCurrentSong] = useState(songs[4]);
+    const [currentSong, setCurrentSong] = useState(songs[0]);
     const [isPlaying, setIsPlaying] = useState(false);
+    const [libraryStatus, setLibraryStatus] = useState(false);
+
     return (
-        <div className={styles.App}>
-            <Nav/>
+        <div className={`${styles.App} ${libraryStatus ? styles.libraryActive : ""}`}>
+            <Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus}/>
             <Song
                 audioRef={audioRef}
                 songs={songs}
@@ -30,6 +32,9 @@ function App() {
                 isPlaying={isPlaying}
                 setIsPlaying={setIsPlaying}
                 currentSong={currentSong}
+                songs={songs}
+                setCurrentSong={setCurrentSong}
+                setSongs={setSongs}
             />
             <Library
                 audioRef={audioRef}
@@ -37,6 +42,7 @@ function App() {
                 setCurrentSong={setCurrentSong}
                 isPlaying={isPlaying}
                 setSongs={setSongs}
+                libraryStatus={libraryStatus}
             />
         </div>
     );

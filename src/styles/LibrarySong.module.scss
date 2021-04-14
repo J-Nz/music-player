@@ -6,16 +6,21 @@
 
   cursor: pointer;
 
+  transition: background 0.5s ease;
+
   img {
     width: 30%;
   }
-  &:hover{
+
+  &:hover {
     background: #545fa0;
   }
 }
+
 .selected {
   background: #00a1a3;
 }
+
 .songDescription {
   padding-left: 1rem;
 

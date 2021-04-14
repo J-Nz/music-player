@@ -5,9 +5,10 @@ import LibrarySong from "./LibrarySong";
 import styles from "../styles/Library.module.scss";
 
 
-const Library = ({songs, setCurrentSong, audioRef, isPlaying, setSongs}) => {
+const Library = ({songs, setCurrentSong, audioRef, isPlaying, setSongs, libraryStatus}) => {
+
     return (
-        <div className={styles.library}>
+        <div className={`${styles.library} ${libraryStatus ? styles.activeLibrary : ""}`}>
             <h2>Library</h2>
             <div>
                 {songs.map((song) => (

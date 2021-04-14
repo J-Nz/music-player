@@ -9,12 +9,21 @@
   overflow-y: scroll;
   overflow-x: hidden;
 
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+
   display: flex;
   flex-direction: column;
 
   h2 {
     padding: 2rem;
   }
+}
+
+.activeLibrary {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 //firefox
@@ -37,4 +46,10 @@
   background-color: rgba(155, 155, 155, 0.5);
   border-radius: 20px;
   border: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
 }
