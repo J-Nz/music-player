@@ -1,0 +1,5 @@
+***SASS
+npm install node-sass
+
+***REDUX
+npm install redux react-redux
